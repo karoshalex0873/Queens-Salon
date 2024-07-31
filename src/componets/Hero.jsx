@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import HeroImg from '../assets/Hero.png'
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
-
+import Navbar  from './Navbar';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CSS
 
@@ -15,9 +15,9 @@ const Hero = () => {
   return (
     <div className='min-h-screen bg-primaryDark flex flex-col justify-center items-center text-white relative overflow-hidden'>
       {/* include the navbar here */}
-      <div className='w-full fixed top-0 left-0 z-50'>
-
-      </div>
+       <div className="w-full z-50 fixed top-0">
+        <Navbar />
+       </div>
       {/* icons for connection also and see the post */}
       <div 
       data-aos="fade-up"
@@ -57,7 +57,7 @@ const Hero = () => {
               data-aos="fade-right"
               className="text-5xl sm:text-6xl lg:text-7xl font-bold "
             >
-              The  Queens <span className="text-secondary"> <br />Salon</span>
+              The  Queens <span className="text-primary"> <br />Salon</span>
             </h1>
             <p
               data-aos="fade-up"
