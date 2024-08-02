@@ -1,14 +1,23 @@
-import React from 'react'
-import Hero from './componets/Hero'
-import About from './componets/About'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Team from './containers/Team';
 
 const App = () => {
   return (
-    <div>
-      <Hero />
-      <About />
-    </div>
-  )
-}
+    <Router>
+      <div className="">
+        <Hero />
+        <About />
+        <Routes>
+          <Route path="/team" element={<Team />} />
+        </Routes>
+        <Services />
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;

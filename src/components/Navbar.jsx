@@ -9,8 +9,8 @@ const Menu = [
   },
   {
     id: 2,
-    name: 'Projects',
-    link: '#projects',
+    name: 'Services',
+    link: '#service',
   },
   {
     id: 3,

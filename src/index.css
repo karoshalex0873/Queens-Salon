@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css or your CSS file */
+
+.slide-in {
+    animation: slideIn 1s forwards;
+  }
+  
+  .slide-out {
+    animation: slideOut 1s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      background-position: -100% center;
+    }
+    to {
+      background-position: center;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      background-position: center;
+    }
+    to {
+      background-position: 100% center;
+    }
+  }
+  
 @layer utilities {
     .menu-icon {
       @apply inline-block lg:text-xl md:text-xl sm:text-xs py-2 px-2 rounded-2xl text-white/70 hover:text-white duration-200   hover:scale-110;
