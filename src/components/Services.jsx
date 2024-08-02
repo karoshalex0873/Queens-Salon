@@ -41,7 +41,7 @@ const Services = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
-    const intervalId = setInterval(() => changeBackgroundImage(1), 6000); // Change image every 1 minute
+    const intervalId = setInterval(() => changeBackgroundImage(1), 60000); // Change image every 1 minute
     return () => clearInterval(intervalId); // Clear interval on component unmount
   }, []);
 
@@ -72,7 +72,7 @@ const Services = () => {
         <div
           className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black"
           style={{
-            background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6))',
+            background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1))',
           }}
         ></div>
       </div>
