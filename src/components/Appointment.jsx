@@ -30,6 +30,7 @@ const Appointment = () => {
     } else if (countdown === 0) {
       setShowPopup(false);
       setCountdown(5); // Reset countdown for next time
+      resetForm(); // Reset form fields
     }
     return () => clearInterval(timer);
   }, [showPopup, countdown]);
@@ -57,6 +58,15 @@ const Appointment = () => {
     } catch (error) {
       console.error('Error sending SMS:', error);
     }
+  };
+
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      phone: '',
+      date: '',
+      time: ''
+    });
   };
 
   return (
