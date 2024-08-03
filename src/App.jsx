@@ -8,6 +8,7 @@ import Haircolor from './containers/Haircolor';
 import Gallery from './containers/Gallery';
 import SkincareTreatments from './containers/SkincareTreatments';
 import HaircutsStyling from './containers/HaircutsStyling';
+import Appointment from './components/Appointment';
 
 const App = () => {
   const haircolorRef = useRef(null);
@@ -56,6 +57,7 @@ const App = () => {
         <div ref={haircutsRef}>
           {showhaircuts && <HaircutsStyling />}
         </div>
+        <Appointment />
       </div>
     </Router>
   );

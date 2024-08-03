@@ -14,8 +14,8 @@ const Menu = [
   },
   {
     id: 3,
-    name: 'Skills',
-    link: '#blog',
+    name: 'Appoitment',
+    link: '#appointment',
   },
   {
     id: 4,
