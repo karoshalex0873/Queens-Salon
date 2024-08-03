@@ -37,13 +37,13 @@ const services = [
   //   image: back4,
   //   link: '/services/manicures-pedicures',
   // },
-  // {
-  //   name: 'Massage Therapy',
-  //   description: 'Relaxing and therapeutic massage services for your well-being.',
-  //   provider: 'David King',
-  //   image: back4,
-  //   link: '/services/massage-therapy',
-  // },
+  {
+    name: 'Massage Therapy',
+    description: 'Relaxing and therapeutic massage services for your well-being.',
+    provider: 'David King',
+    image: back4,
+    link: '#therapy',
+  },
   // {
   //   name: 'Facial Treatments',
   //   description: 'Rejuvenating facial treatments for a refreshed and youthful appearance.',
@@ -56,7 +56,7 @@ const services = [
 
 const backgroundImages = [back1, back2, back3];
 
-const Services = ({ scrollToHaircolor,  scrollToSkintretment, scrollToHaircut}) => {
+const Services = ({ scrollToHaircolor,  scrollToSkintretment, scrollToHaircut, scrollToMassage}) => {
   const [bgImage, setBgImage] = useState(backgroundImages[0]);
   const [animationClass, setAnimationClass] = useState('');
 
@@ -87,6 +87,9 @@ const Services = ({ scrollToHaircolor,  scrollToSkintretment, scrollToHaircut}) 
       } 
       else if (link === "#haircuts"){
         scrollToHaircut();
+      }
+      else if(link === "#therapy"){
+        scrollToMassage();
       }
       else {
         window.location.href = link;

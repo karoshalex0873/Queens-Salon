@@ -13,6 +13,13 @@ const HaircutsStyling = () => {
       once: true,
     });
   }, []);
+  
+  const handleScrollToAppointment = () => {
+    if (appointmentRef.current) {
+      appointmentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <div className="py-6 px-4 md:px-8 lg:px-12 max-w-full mx-auto">
