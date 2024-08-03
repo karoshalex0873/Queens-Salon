@@ -23,14 +23,7 @@ const services = [
     image: back3,
     link: '#haircolor',
   },
-  {
-    name: 'Salon Management',
-    description: 'Efficient scheduling, client consultations, and salon operations.',
-    provider: 'Sarah Lee',
-    image: back1,
-    link: '/services/salon-management',
-  },
-  {
+   {
     name: 'Skincare Treatments',
     description: 'Personalized skincare treatments for glowing, healthy skin.',
     provider: 'Amanda Clark',
