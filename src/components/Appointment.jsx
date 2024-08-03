@@ -17,7 +17,7 @@ const Appointment = () => {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
-      once: true,
+      once: false,
     });
   }, []);
 
@@ -62,7 +62,7 @@ const Appointment = () => {
   return (
     <>
       <span id='appointment'></span>
-      <div className="py-6 px-4 md:px-8 lg:px-12 max-w-full mx-auto">
+      <div className="py-10 px-4 md:px-8 lg:px-12 max-w-full mx-auto">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primaryDark mb-8 text-center" data-aos="fade-up">
           Appointment Page
         </h1>
