@@ -15,8 +15,8 @@ const MassageTherapy = () => {
   return (
     <div className="py-6 px-4 md:px-8 lg:px-12 w-full mx-auto container bg-gray-300">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primaryDark mb-8 text-center" data-aos="fade-up">Massage Therapy</h1>
-        <div className="flex gap-6">
-           <div className="flex-col pl-32 max-w-md w-full text-secondary justify-center" data-aos="fade-left"> 
+        <div className="relative  block lg:flex  justify-center py-6 gap-6 space-y-10">
+           <div className="flex-col max-w-md w-full text-secondary justify-center" data-aos="fade-left"> 
            <h1 className="text-2xl  md:text-3xl lg:text-4xl font-normal font-serif text-secondary mb-8 text-center" data-aos="fade-right">Therapist </h1>
             <img
             data-aos="zoom-out fade-up"
@@ -37,13 +37,20 @@ const MassageTherapy = () => {
                     <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-primaryDark mb-2">Available Days</h2>
                     <p className="text-base md:text-lg text-primaryDark">We offer Massage Therapy services services from Monday to Saturday, 9 AM - 6 PM.</p>
                 </div>
+                </div>
+                <div className=" gap-8 max-w-fit py-4 overflow-hidden rounded-2xl flex border-2 border-secondary ">
+                    <img
+                    className="w-full h-auto" src={therapist} alt="" />
+                    <img className="w-full  h-auto" src={therapist} alt="" />
+                    <img className="w-full  h-auto" src={therapist} alt="" />
+                    <img className="w-full  h-auto" src={therapist} alt="" />
 
                 </div>
-                <div>
-                    <h1>Reviews</h1>
-                    <div className="flex text-orange-300">
-                    <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-primaryDark" />
-                    </div>
+                <div className="flex flex-col px-3 py-3 space-y-3">
+                    <h1 className="font-serif text-xl font-normal text-primaryDark">Rating</h1>
+                    <div className="flex text-orange-300 font-serif">
+                    <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-primaryDark" /> 
+                </div>
                 </div>
             </div>
         </div>
