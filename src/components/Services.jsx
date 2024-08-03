@@ -30,27 +30,27 @@ const services = [
     image: back4,
     link: '#skincaretretments',
   },
-  {
-    name: 'Manicures & Pedicures',
-    description: 'Luxurious manicure and pedicure services for beautiful hands and feet.',
-    provider: 'Jessica White',
-    image: back4,
-    link: '/services/manicures-pedicures',
-  },
-  {
-    name: 'Massage Therapy',
-    description: 'Relaxing and therapeutic massage services for your well-being.',
-    provider: 'David King',
-    image: back4,
-    link: '/services/massage-therapy',
-  },
-  {
-    name: 'Facial Treatments',
-    description: 'Rejuvenating facial treatments for a refreshed and youthful appearance.',
-    provider: 'Sophia Martin',
-    image: back4,
-    link: '/services/facial-treatments',
-  },
+  // {
+  //   name: 'Manicures & Pedicures',
+  //   description: 'Luxurious manicure and pedicure services for beautiful hands and feet.',
+  //   provider: 'Jessica White',
+  //   image: back4,
+  //   link: '/services/manicures-pedicures',
+  // },
+  // {
+  //   name: 'Massage Therapy',
+  //   description: 'Relaxing and therapeutic massage services for your well-being.',
+  //   provider: 'David King',
+  //   image: back4,
+  //   link: '/services/massage-therapy',
+  // },
+  // {
+  //   name: 'Facial Treatments',
+  //   description: 'Rejuvenating facial treatments for a refreshed and youthful appearance.',
+  //   provider: 'Sophia Martin',
+  //   image: back4,
+  //   link: '/services/facial-treatments',
+  // },
 ];
 
 
