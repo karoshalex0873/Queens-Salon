@@ -7,6 +7,7 @@ import Team from './containers/Team';
 import Haircolor from './containers/Haircolor';
 import Gallery from './containers/Gallery';
 import SkincareTreatments from './containers/SkincareTreatments';
+import HaircutsStyling from './containers/HaircutsStyling';
 
 const App = () => {
   const haircolorRef = useRef(null);
@@ -26,6 +27,15 @@ const App = () => {
     setTimeout(() =>{
       skintretmentRef.current.scrollIntoView({behavior: 'smooth'});
     },100);
+  };
+  const haircutsRef=useRef(null);
+  const [showhaircuts, setShowhaircuts] = useState(false);
+  const scrollToHaircut = () =>{
+    setShowhaircuts(true);
+    setTimeout(() => {
+      haircutsRef.current.scrollIntoView({behavior:'smooth'})
+    }, 100);
+ 
   }
 
   return (
@@ -36,12 +46,15 @@ const App = () => {
         <Routes>
           <Route path="/team" element={<Team />} />
         </Routes>
-        <Services scrollToHaircolor={scrollToHaircolor} scrollToSkintretment={scrollToSkintretment} />
+        <Services scrollToHaircolor={scrollToHaircolor} scrollToSkintretment={scrollToSkintretment} scrollToHaircut={scrollToHaircut} />
         <div ref={haircolorRef}>
           {showHaircolor && <Haircolor />}
         </div>
         <div ref={skintretmentRef}>
           {showSkintretment && <SkincareTreatments />}
+        </div>
+        <div ref={haircutsRef}>
+          {showhaircuts && <HaircutsStyling />}
         </div>
       </div>
     </Router>

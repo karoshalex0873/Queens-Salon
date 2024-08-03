@@ -14,7 +14,7 @@ const services = [
     description: 'Expert haircuts and styling services tailored to your preferences.',
     provider: 'Emily Johnson',
     image: back2,
-    link: '/services/haircuts-styling',
+    link: '#haircuts',
   },
   {
     name: 'Hair Coloring',
@@ -56,7 +56,7 @@ const services = [
 
 const backgroundImages = [back1, back2, back3];
 
-const Services = ({ scrollToHaircolor,  scrollToSkintretment}) => {
+const Services = ({ scrollToHaircolor,  scrollToSkintretment, scrollToHaircut}) => {
   const [bgImage, setBgImage] = useState(backgroundImages[0]);
   const [animationClass, setAnimationClass] = useState('');
 
@@ -84,7 +84,11 @@ const Services = ({ scrollToHaircolor,  scrollToSkintretment}) => {
         scrollToHaircolor();
       } else if (link === '#skincaretretments') {
         scrollToSkintretment();
-      } else {
+      } 
+      else if (link === "#haircuts"){
+        scrollToHaircut();
+      }
+      else {
         window.location.href = link;
       }
     };
@@ -166,7 +170,7 @@ const Services = ({ scrollToHaircolor,  scrollToSkintretment}) => {
                   Provided by: {service.provider}
                 </p>
                 <a
-                  className="flex items-center text-primary font-semibold hover:underline"
+                  className="flex items-center text-primary font-semibold hover:underline cursor-pointer"
                   data-aos="fade-up"
                 >
                   <span className="mr-2">Learn More</span>
