@@ -1,5 +1,4 @@
 import { FaLinkedin, FaWhatsapp,FaGithub, FaTwitter, FaInstagram, FaPhone} from 'react-icons/fa';
-
 const socialMedia = [
   { id: 1, name: 'LinkedIn', url: 'https://www.linkedin.com/in/alex-karobia-510a17264', icon: <FaWhatsapp color="#057c2deb" /> },
   { id: 2, name: 'GitHub', url: 'https://github.com/karoshalex0873', icon: <FaGithub color="#333" /> },
@@ -33,8 +32,8 @@ const SocialMediaLinks = () => {
         <FaPhone className="text-4xl text-secondary" />
         <h1 className="text-xl font-bold font-serif  text-primary py-4 mt-9">+25470927352</h1>
         </div>
-
       </div>
+      
     </div>
   );
 };

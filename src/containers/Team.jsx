@@ -69,7 +69,7 @@ const Team = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-center font-serif text-3xl sm:text-4xl font-bold"
+          className="text-center font-serif text-3xl sm:text-4xl font-bold text-primary"
         >
           Meet Our Team
         </h1>

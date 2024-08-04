@@ -11,6 +11,7 @@ import HaircutsStyling from './containers/HaircutsStyling';
 import Appointment from './components/Appointment';
 import MassageTherapy from './containers/MassageTherapy';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   const haircolorRef = useRef(null);
@@ -73,6 +74,9 @@ const App = () => {
         </div>
         <Appointment />
         <Contact />
+        <div className=" relative flex items-center justify-center">
+        <Footer/>    
+        </div>
       </div>
     </Router>
   );
