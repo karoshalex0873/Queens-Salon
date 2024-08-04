@@ -11,9 +11,11 @@ const MassageTherapy = () => {
               once: true,
             });
           }, []);
+
+//  const [slider, setSlider] = useState(false)
    
   return (
-    <div className="py-6 px-4 md:px-8 lg:px-12 w-full mx-auto container bg-gray-300">
+    <div className="py-6 px-4 md:px-8 lg:px-12 w-full mx-auto container bg-gray-300 rounded-3xl">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primaryDark mb-8 text-center" data-aos="fade-up">Massage Therapy</h1>
         <div className="relative  block lg:flex  justify-center py-6 gap-6 space-y-10">
            <div className="flex-col max-w-md w-full text-secondary justify-center" data-aos="fade-left"> 
@@ -38,19 +40,22 @@ const MassageTherapy = () => {
                     <p className="text-base md:text-lg text-primaryDark">We offer Massage Therapy services services from Monday to Saturday, 9 AM - 6 PM.</p>
                 </div>
                 </div>
-                <div className=" gap-8 max-w-fit py-4 overflow-hidden rounded-2xl flex border-2 border-secondary ">
+                <div className=" gap-8 max-w-fit py-4 overflow-hidden rounded-2xl bg-primaryDark flex border-2 border-white ">
                     <img
                     className="w-full h-auto" src={therapist} alt="" />
-                    <img className="w-full  h-auto" src={therapist} alt="" />
-                    <img className="w-full  h-auto" src={therapist} alt="" />
-                    <img className="w-full  h-auto" src={therapist} alt="" />
-
                 </div>
-                <div className="flex flex-col px-3 py-3 space-y-3">
-                    <h1 className="font-serif text-xl font-normal text-primaryDark">Rating</h1>
+                <div className="flex  flex-col px-3 py-3 space-y-3 ">
+                    <h1 className="font-light italic font text-3xl font-serif ring-secondary">You are all welcome</h1>
+                    <div className="flex-col ">
+                    <h1 className="font-serif text-xl font-normal text-primaryDark">4.0 rating </h1>
                     <div className="flex text-orange-300 font-serif">
-                    <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-primaryDark" /> 
-                </div>
+                    <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-primaryDark" /> </div>
+                    </div>
+                  <button
+                        className="bg-gradient-to-r w-fit flex justify-center items-center absolute right-0 bottom-0 from-primaryDark to-primary border-2 border-white rounded-t-full rounded-bl-full px-6 py-3 font-semibold text-white hover:scale-105 transition duration-200"
+                    >
+                        Book an <br /> Appointment
+                    </button>
                 </div>
             </div>
         </div>

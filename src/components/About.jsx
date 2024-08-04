@@ -22,7 +22,7 @@ const About = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="w-full mx-auto flex flex-col justify-center text-primaryDark">
+      <div className="w-full mx-auto flex flex-col justify-center text-primaryDark bg-gray-300 rounded-3xl">
         <div className="w-full">
           <div className="flex items-center justify-center px-4">
             <div className="flex flex-col space-y-5 text-2xl text-center mt-2 w-full max-w-[600px]">

@@ -72,14 +72,14 @@ const Appointment = () => {
   return (
     <>
       <span id='appointment'></span>
-      <div className="py-10 px-4 md:px-8 lg:px-12 max-w-full mx-auto">
+      <div className="py-10 px-4 md:px-8 lg:px-12 max-w-full mx-auto rounded-2xl bg-gray-300">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primaryDark mb-8 text-center" data-aos="fade-up">
           Appointment Page
         </h1>
         <div className="lg:flex lg:flex-row lg:items-start flex-col">
           <div className="lg:w-1/2 flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
             <img src={appointmentImage} alt="Appointment" className="mx-auto mb-4 w-full max-w-md" />
-            <p className="text-base md:text-lg text-primaryDark max-w-md text-center">
+            <p className="text-base md:text-lg text-primaryDark max-w-md text-start">
               Welcome to the appointment page. Here, you can book, view, and manage your appointments. Our easy-to-use system ensures you get the best service at your convenience.
             </p>
           </div>

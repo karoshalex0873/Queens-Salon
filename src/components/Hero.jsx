@@ -23,7 +23,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='min-h-screen bg-primaryDark flex flex-col justify-center items-center text-white relative overflow-hidden'>
+    <div className='min-h-screen bg-primaryDark flex flex-col justify-center items-center text-white relative overflow-hidden rounded-3xl'>
       {/* include the navbar here */}
       <div className="w-full z-50 fixed top-0">
         <Navbar />

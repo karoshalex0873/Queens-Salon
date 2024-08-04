@@ -64,7 +64,7 @@ const Team = () => {
   }, []);
 
   return (
-    <div className='team'>
+    <div className='team text-gray-300 px-10'>
       <div  className="py-6 container">
         <h1
           data-aos="fade-up"
@@ -87,7 +87,7 @@ const Team = () => {
                   alt={owner.name}
                   className="w-32 h-32 object-cover rounded-full mb-4"
                 />
-                <h3 className="text-2xl font-semibold">{owner.name}</h3>
+                <h3 className="text-2xl  text-primary font-semibold">{owner.name}</h3>
                 <p className="text-lg text-primaryDark">{owner.title}</p>
                 <p className="mt-2 text-start text-primaryDark">{owner.description}</p>
               </div>
