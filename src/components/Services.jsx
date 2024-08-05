@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { RiArrowRightLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-import back1 from '../assets/assets/about/img.jpg';
-import back2 from '../assets/assets/home/img.png';
+import back1 from '../assets/assets/treatments/img.jpg';
+import back2 from '../assets/Hero.png';
 import back3 from '../assets/Hero.png';
-import back4 from '../assets/Hero.png';
+import back4 from '../assets/assets/about/img.jpg';
 
 
 const services = [
@@ -27,7 +27,7 @@ const services = [
     name: 'Skincare Treatments',
     description: 'Personalized skincare treatments for glowing, healthy skin.',
     provider: 'Amanda Clark',
-    image: back4,
+    image: back1,
     link: '#skincaretretments',
   },
   // {
