@@ -48,7 +48,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-block p-2 rounded-full cursor-pointer border border-white hover:bg-white hover:text-primary transition-colors duration-300"
         >
-          <FaTwitter className="text-xl text-secondary" />
+          <FaTwitter className="text-xl text-secondary " />
         </a>
         <a
           href="https://www.linkedin.com/in/alex-karobia-510a17264"
